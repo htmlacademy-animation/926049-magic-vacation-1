@@ -91,6 +91,17 @@
 }
 
 .slider__item-text {
+
+  .swiper-slide-active &,
+  .swiper-slide-next & {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  transform: translateY(20px);
+  opacity: 0;
+  transition: opacity 0.5s ease-out 0.5s, transform 0.5s ease-out 0.5s;
+
   margin-top: 3.6rem;
   margin-bottom: 0;
   max-width: 34rem;
@@ -124,6 +135,7 @@
     line-height: 1.5rem;
   }
 }
+
 
 .slider__controls {
   position: absolute;
