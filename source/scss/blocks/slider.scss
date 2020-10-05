@@ -94,11 +94,19 @@
 
   .swiper-slide-active &,
   .swiper-slide-next & {
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
   }
 
-  transform: translateY(20px);
+  .swiper-slide-next & {
+    transition-delay: 0.7s;
+  }
+
+  &.transparent {
+    opacity: 0;
+  }
+
+  transform: translateX(20px);
   opacity: 0;
   transition: opacity 0.5s ease-out 0.5s, transform 0.5s ease-out 0.5s;
 

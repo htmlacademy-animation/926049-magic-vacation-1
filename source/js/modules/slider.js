@@ -63,7 +63,7 @@ export default () => {
           },
           resize: () => {
             storySlider.update();
-          }
+          },
         },
         observer: true,
         observeParents: true
