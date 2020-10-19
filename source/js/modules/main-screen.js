@@ -1,6 +1,5 @@
 import {animateHeading} from './heading-animation';
 
-const title = document.querySelector(`.intro__title`);
 const info = document.querySelector(`.intro__info`);
 
 export default () => {
