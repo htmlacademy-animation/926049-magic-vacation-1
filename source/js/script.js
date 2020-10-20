@@ -10,6 +10,7 @@ import social from './modules/social.js';
 import FullPageScroll from './modules/full-page-scroll';
 import {initLoading} from './modules/loading';
 import initRules from './modules/rules';
+import initMainScreen from './modules/main-screen';
 
 // init modules
 initLoading();
@@ -22,6 +23,7 @@ result();
 form();
 social();
 initRules();
+initMainScreen();
 
 const fullPageScroll = new FullPageScroll();
 fullPageScroll.init();
